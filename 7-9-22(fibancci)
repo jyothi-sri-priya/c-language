@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int first=0,second=1;
+    int n,sum=0;
+    printf("enter n value:");
+    scanf("%d",&n);
+    sum=first+second;
+    while(sum<n)
+    {
+        first=second;
+        second=sum;
+        sum=first+second;
+    }
+    if(sum==n)
+    printf("yes");
+    else
+    printf("No");
+
+    return 0;
+}
